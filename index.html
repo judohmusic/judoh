@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>judoh</title>
+    <style>
+        body {
+            /* Extremely dark navy blue, almost black but distinctly blue */
+            background-color: #050914;
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 20px 20px;
+            
+            color: #cccccc;            /* Soft gray body text */
+            font-family: Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .site-wrapper {
+            width: 100%;
+            max-width: 550px;          /* Centers everything in a neat 90s column */
+        }
+        .band-title {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 56px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-transform: lowercase;
+            color: #cc5500;            /* Burnt orange title */
+        }
+        /* Small Retro GIF Styling */
+        .gif-container {
+            text-align: center;
+            margin-top: 25px;
+        }
+        .gif-container img {
+            max-width: 90px;           /* Keeps it small and subtle */
+            height: auto;
+            border: 1px solid #141d33;
+            background-color: #03050c;
+            padding: 2px;
+            image-rendering: pixelated;
+        }
+        /* News / Release Announcement with Retro Marquee */
+        .news-section {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 13px;
+            letter-spacing: 0.5px;
+            text-transform: lowercase;
+            color: #cccccc;
+            background-color: #03050c;
+            border: 1px dashed #141d33;
+            padding: 6px 0;
+        }
+        .news-section marquee {
+            width: 90%;
+        }
+        /* Bold Darker Gray Accent */
+        .bold-dark-gray {
+            color: #9a9a9a;
+            font-weight: bold;
+            font-style: italic;
+        }
+        /* Centered Description (No Box) */
+        .description-section {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 13px;
+            line-height: 1.6;
+            letter-spacing: 0.5px;
+            text-transform: lowercase;
+            color: #cccccc;
+        }
+        .description-section a {
+            color: #cccccc;
+            text-decoration: underline;
+            padding: 2px 4px;          /* Gives the link room for its hover box */
+        }
+        .description-section a:hover {
+            background-color: #cccccc; /* Solid gray highlight box on hover */
+            color: #050914;            /* Inverts text to dark navy for contrast */
+            text-decoration: none;
+        }
+        /* Minimal Text Navigation */
+        .nav-section {
+            text-align: center;
+            font-size: 13px;
+            letter-spacing: 0.5px;
+            text-transform: lowercase;
+            margin-bottom: 25px;
+        }
+        .nav-section a {
+            color: #cccccc;
+            text-decoration: underline;
+            padding: 2px 4px;
+        }
+        .nav-section a:hover {
+            background-color: #cccccc;
+            color: #050914;
+            text-decoration: none;
+        }
+        .nav-section .separator {
+            color: #2b3959;
+            margin: 0 6px;
+        }
+        /* Blog / Guestbook Entry Box Styling */
+        .guestbook-box {
+            border: 1px solid #334155;
+            background-color: #03050c;
+            margin-bottom: 25px;
+            font-size: 13px;
+            text-transform: lowercase;
+            letter-spacing: 0.5px;
+        }
+        .guestbook-header {
+            padding: 10px 15px;
+            line-height: 1.6;
+        }
+        .guestbook-divider {
+            border: none;
+            border-top: 1px solid #334155;
+            margin: 0;
+        }
+        .guestbook-message {
+            padding: 12px 15px;
+            line-height: 1.5;
+        }
+        /* Footer Section */
+        .footer-section {
+            text-align: center;
+            font-size: 13px;
+            line-height: 1.8;
+            letter-spacing: 0.5px;
+            text-transform: lowercase;
+            color: #cccccc;
+        }
+        .footer-section .quote {
+            font-style: italic;
+            margin-bottom: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="site-wrapper">
+
+        <h1 class="band-title">judoh</h1>
+
+        <!-- Animated New Music Announcement (Original Marquee Style) -->
+        <div class="news-section">
+            <marquee scrollamount="4" behavior="scroll" direction="left">new music <span class="bold-dark-gray">'the purpose of lullabies vary / Caro kann'</span> out in october</marquee>
+        </div>
+        
+        <!-- Centered Description -->
+        <div class="description-section">
+            judoh is a solo project from bloomington, indiana. general inquiries and booking email 
+            <a href="mailto:judohmusic@gmail.com">judohmgmt@gmail.com</a>
+        </div>
+
+        <!-- Minimal Text Links Section -->
+        <div class="nav-section">
+            <a href="YOUR_LINKTREE_URL_HERE" target="_blank">listen</a><span class="separator">|</span><a href="YOUR_INSTAGRAM_URL_HERE" target="_blank">instagram</a><span class="separator">|</span><a href="YOUR_BANDCAMP_URL_HERE" target="_blank">bandcamp</a>
+        </div>
+
+
+        <!-- Footer Section -->
+        <div class="footer-section">
+         
+            <div>&copy; 2026 judoh</div>
+        </div>
+
+        <!-- Small Retro GIF (At the very bottom) -->
+        <div class="gif-container">
+            <img src="beatles.gif" alt="retro gif">
+        </div>
+
+    </div>
+
+</body>
+</html>
